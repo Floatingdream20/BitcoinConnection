@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="http://127.0.0.1/CarAppStore/js/jquery/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="http://127.0.0.1/CarAppStore/js/jquery/jquery-form.js"></script>
+$(document).ready(function() {
+$("#formLogin").ajaxForm(function(data){
+alert("post success." + data);
+//Alert("post success.");
+});
+});
+<form id="formLogin" name="formLogin" action="userLogin.shtml" method="post">
+    <h1>用户登录</h1>
+    <div>
+        <input type="text" placeholder="用户名" required="" id="username" name="account"/>
+    </div>
+    <div>
+        <input type="password" placeholder="密码" required="" id="password" name="passwd"/>
+    </div>
+    <div class="">
+        <span class="help-block u-errormessage" id="js-server-helpinfo"> </span>
+    </div>
+    <div>
+        <!-- <input type="submit" value="Log in" /> -->
+        <input type="submit" value="登录" class="btn btn-primary" id="js-btn-login" style="float: left;"/>
+        <input type="button" value="重置" class="btn btn-primary" id="js-btn-login" style="float: right;" onclick="doReset();"/>
+    </div>
+</form>
+
+</body>
+</html>
