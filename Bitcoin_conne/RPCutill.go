@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-func PrepareJSON(method string,param interface{} )(string,error){
+func PrepareJSON(method string,param... interface{} )(string,error){
 	request:=models.RPCrequest{
 		Id:      time.Now().Unix(),
 		Method:  method,

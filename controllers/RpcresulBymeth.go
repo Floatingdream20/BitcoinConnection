@@ -20,7 +20,7 @@ func (r *ResultbymedController)Get(){
 		return
 	}
 
-   body,err:=Bitcoin_conne.PrepareJSON(prejson.Method,prejson.Args)
+   body,err:=Bitcoin_conne.PrepareJSON(prejson.Method,prejson.Arg1,prejson.Arg2)
 	if err != nil {
 		r.Ctx.WriteString("初始结构json化出错")
 	}
