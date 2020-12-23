@@ -4,5 +4,5 @@ type RPCrequest struct {
 	Id      int64 `json:"id"`
 	Method  string `json:"method"`
 	Jsonrpc string `json:"jsonrpc"`
-	Param   interface{} `json:"param"`
+	Params   interface{} `json:"params"`
 }

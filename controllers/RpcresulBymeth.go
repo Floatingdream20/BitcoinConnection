@@ -1,12 +1,10 @@
 package controllers
 
 import (
-	"Bitcoin_core_web/Bitcoin_conne"
 	"Bitcoin_core_web/bitcoinService"
 	"Bitcoin_core_web/models"
 	"fmt"
 	"github.com/astaxie/beego"
-	"net/http"
 )
 
 type ResultbymedController struct {
@@ -20,6 +18,11 @@ func (r *ResultbymedController) Get() {
 		r.Ctx.WriteString("指令未接收")
 		return
 	}
+	data,err:=bitcoinService.Order(prejson.Method,prejson.Args1)
+	fmt.Println("22",data)
+	r.Data["A"]=data
+	r.TplName = "result.html"
+	/*
 	count,err:=bitcoinService.GetBlockCount()
 	if err != nil {
 		fmt.Println(err.Error())
@@ -52,5 +55,5 @@ func (r *ResultbymedController) Get() {
 		r.Ctx.WriteString("获取失败")
 		return
 	}
-
+*/
 }

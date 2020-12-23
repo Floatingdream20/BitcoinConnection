@@ -11,12 +11,12 @@ import (
 	"time"
 )
 
-func PrepareJSON(method string, param interface{}) (string, error) {
+func PrepareJSON(method string, param... interface{}) (string, error) {
 	request := models.RPCrequest{
 		Id:      time.Now().Unix(),
 		Method:  method,
 		Jsonrpc: RPCVERSION,
-		Param:   param,
+		Params:   param,
 	}
 	requestbyte, err := json.Marshal(&request)
 	if err != nil {
@@ -43,7 +43,8 @@ func Dopost(url string, header map[string]string, body string) (*models.Rpcresul
 		return nil, err
 	}
 	code := reponse.StatusCode
-  fmt.Println(code)
+
+	fmt.Println(code)
 	defer reponse.Body.Close()
 
 	reponsebyte, err := ioutil.ReadAll(reponse.Body)
