@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bitcion 核心互通系统</title>
+</head>
+<body>
+<h1>{{.u}}欢迎来到指令挑选界面</h1>
+<form method="get" action="/RpcresultbyMethod">
+    <input name="arg1" height="50px" width="100px" title="请输入对应的参数" value="nil">
+    <input name="arg2" height="50px" width="100px" title="请输入对应的参数" value="nil">
+    <ul style="list-style: none">
+
+        <li>
+            <button name="method" value="getblockcount" title="用于获取当前节点的区块总数">getblockcount</button>
+        </li>
+        <li>
+            <button name="method" value="getbestblockhash" title="获取最新区块的hash">getbestblockhash</button>
+        </li>
+        <li>
+            <button name="method" value="getblockhash" title="通过区块高度查看区块hash">getblockhash</button>
+        </li>
+        <li>
+            <button name="method" value="getblock" title="根据区块hash获取区块信息">getblock</button>
+        </li>
+        <li>
+            <button name="method" value="getnewaddress" title="生成一个新的比特币地址">getnewaddress</button>
+        </li>
+        <li>
+            <button name="method" value="getblockchaininfo" title="获取区块链的数据">getblockchaininfo</button>
+        </li>
+        <li>
+            <button name="method" value="getdifficulty" title="以最小难度的倍数返回工作证明难度">getdifficulty</button>
+        </li>
+        <li>
+            <button name="method" value="getbalances" title="返回服务器的总运行时间">getbalances</button>
+        </li>
+    </ul>
+
+</form>
+</body>
+</html>
