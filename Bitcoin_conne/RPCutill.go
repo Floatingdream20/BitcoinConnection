@@ -11,13 +11,52 @@ import (
 	"time"
 )
 
-func PrepareJSON(method string, param... interface{}) (string, error) {
+func PrepareJSON(method string, prejson *models.Prejson) (string, error) {
+
 	request := models.RPCrequest{
 		Id:      time.Now().Unix(),
 		Method:  method,
 		Jsonrpc: RPCVERSION,
-		Params:   param,
+		}
+
+
+	switch method {
+	case "getblockcount":
+		request.Params= nil
+		break
+	case "getblock":
+		request.Params = []interface{}{prejson.Args1}
+		break
+	case "getbestblockhash":
+		request.Params = nil
+		break
+	case "getblockhash":
+		request.Params = []interface{}{prejson.Args1}
+		break
+	case "getnewaddress":
+		request.Params = nil
+		break
+	case "getblockchaininfo":
+		request.Params = nil
+		break
+	case "getdifficulty":
+		request.Params = nil
+		break
+	case "uptime":
+		request.Params = nil
+		break
+	case "validateaddress":
+		request.Params = []interface{}{prejson.Args1}
+		break
+	case "getbalances":
+		request.Params = nil
+		break
+	case "getmemoryinfo":
+		request.Params = nil
+		break
 	}
+
+
 	requestbyte, err := json.Marshal(&request)
 	if err != nil {
 		fmt.Println(err.Error())
@@ -31,7 +70,7 @@ func Dopost(url string, header map[string]string, body string) (*models.Rpcresul
 	client := http.Client{}
 	request, err := http.NewRequest("POST", url, strings.NewReader(body))
 	if err != nil {
-		fmt.Println(err.Error())
+
 		return nil, err
 	}
 
@@ -40,6 +79,7 @@ func Dopost(url string, header map[string]string, body string) (*models.Rpcresul
 	}
 	reponse, err := client.Do(request)
 	if err != nil {
+
 		return nil, err
 	}
 	code := reponse.StatusCode
@@ -49,6 +89,7 @@ func Dopost(url string, header map[string]string, body string) (*models.Rpcresul
 
 	reponsebyte, err := ioutil.ReadAll(reponse.Body)
 	if err != nil {
+
 		return nil, err
 	}
 
@@ -73,6 +114,9 @@ func Dopost(url string, header map[string]string, body string) (*models.Rpcresul
 func Base64(msg string) string {
 	return base64.StdEncoding.EncodeToString([]byte(msg))
 }
+/*
+**请求头设置
+ */
 func CreateMap() map[string]string {
 	Map := make(map[string]string)
 	Map["Encoding"] = "UTF-8"
