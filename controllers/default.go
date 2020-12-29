@@ -10,4 +10,5 @@ type MainController struct {
 
 func (c *MainController) Get() {
 	c.TplName = "index.html"
+	//c.Data["a"]= bitcoinService.GetBestBlockHash()
 }

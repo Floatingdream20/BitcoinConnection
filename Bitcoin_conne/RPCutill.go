@@ -11,18 +11,17 @@ import (
 	"time"
 )
 
-func PrepareJSON(method string, prejson *models.Prejson) (string, error) {
+func PrepareJSON(method string, prejson models.Prejson) (string, error) {
 
 	request := models.RPCrequest{
 		Id:      time.Now().Unix(),
 		Method:  method,
 		Jsonrpc: RPCVERSION,
-		}
-
+	}
 
 	switch method {
 	case "getblockcount":
-		request.Params= nil
+		request.Params = nil
 		break
 	case "getblock":
 		request.Params = []interface{}{prejson.Args1}
@@ -54,8 +53,29 @@ func PrepareJSON(method string, prejson *models.Prejson) (string, error) {
 	case "getmemoryinfo":
 		request.Params = nil
 		break
-	}
+	case "gettxoutsetinfo":
+		request.Params = nil
+		break
+	case "getmempoolinfo":
+		request.Params = nil
+		break
+	case "getchaintxstats":
+		request.Params = []interface{}{prejson.Args1,prejson.Args2}
+		break
+	case "getblockheader":
+		request.Params = []interface{}{prejson.Args1,prejson.Args2}
+		break
+	case "getwalletinfo":
+		request.Params = nil
+		break
+	case "getnetworkinfo":
+		request.Params = nil
+		break
+	case "getmininginfo":
+		request.Params = nil
+		break
 
+	}
 
 	requestbyte, err := json.Marshal(&request)
 	if err != nil {
@@ -114,6 +134,7 @@ func Dopost(url string, header map[string]string, body string) (*models.Rpcresul
 func Base64(msg string) string {
 	return base64.StdEncoding.EncodeToString([]byte(msg))
 }
+
 /*
 **请求头设置
  */
