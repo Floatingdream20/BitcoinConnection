@@ -3,26 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <title>Bitcion 核心互通系统</title>
+    <style type="text/css">
+        ul {
+            list-style: none;
+            width: auto;
+        }
+
+
+        table {
+
+            width: auto;
+            margin: auto;
+            border-collapse: collapse;
+
+        }
+
+        th, td {
+            color: wheat;
+            width: 500px;
+
+            height: 40px;
+
+            border: 1px solid white;
+
+            font-size: 12px;
+
+            text-align: center;
+
+        }
+
+        h2 {
+            display: ;
+
+        }
+
+        .h1 {
+            margin: auto;
+        }
+
+        #h2 {
+
+            margin: auto;
+            float: left;
+
+        }
+
+        button:hover {
+            color: beige;
+            font-size: 20px;
+            background-color: orange;
+            cursor: pointer;
+
+            font-weight: bold;
+
+
+        }
+
+        .button {
+            border-color: lavenderblush;
+            color: #FFFFB6;
+            background-color: #3A4A64;
+            width: 250px;
+            height: 50px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        #h1 {
+            margin-left: 40%;
+            color: wheat;
+
+        }
+
+        body {
+            font-family: "微软雅黑";
+            background-image: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=212568819,545680569&fm=26&gp=0.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .a1 {
+            width: 250px;
+            height: 50px;
+
+        }
+    </style>
 </head>
 <body>
-<h1>{{.u}}欢迎来到指令挑选界面</h1>
-<form method="get" action="/RpcresultbyMethod">
-    <input name="args2" height="50px" width="100px" title="请输入对应的参数" value="nil">
-    <input name="args1" height="50px" width="100px" title="请输入对应的参数" value="nil">
-<ul style="list-style: none" >
 
-    <li><button name="method" value="getblockcount" title="用于获取当前节点的区块总数" >getblockcount</button></li>
-    <li><button name="method" value="grtblockhash" title="用于获取当前节点的区块总数" >getblockcount</button></li>
-    <li><button name="method" value="getblockcount" title="用于获取当前节点的区块总数" >getblockcount</button></li>
-    <li><button name="method" value="getblockcount" title="用于获取当前节点的区块总数" >getblockcount</button></li>
-    <li><button name="method" value="getblockcount" title="用于获取当前节点的区块总数" >getblockcount</button></li>
-    <li><button name="method" value="getblockcount" title="用于获取当前节点的区块总数" >getblockcount</button></li>
-    <li><button name="method" value="getblockcount" title="用于获取当前节点的区块总数" >getblockcount</button></li>
-    <li><button name="method" value="getblockcount" title="用于获取当前节点的区块总数" >getblockcount</button></li>
-    <li><button name="method" value="getblockcount" title="用于获取当前节点的区块总数" >getblockcount</button></li>
-    <li><button name="method" value="getblockcount" title="用于获取当前节点的区块总数" >getblockcount</button></li>
+<h1 id="h1">{{.u}}欢迎来到指令挑选界面 </h1>
+<form method="get">
 
-    </ul>
+
+    <table>
+        <tr>
+
+            <td colspan="1">
+                请输入对应指令的参数1:&nbsp;&nbsp;&nbsp; <input class="h1" name="args1" height="50px" width="100px"
+                                                      title="请输入对应的参数" value="nil">
+            </td>
+            <td rowspan="9" colspan="2">
+                <h2>结果是:</h2>
+                <ul>
+                    <li>你好</li>
+                    <li>你好</li>
+                    <li>你好</li>
+                    <li>你好</li>
+                    <li>你好</li>
+                    <li>你好</li>
+                    <li>你好</li>
+                    <li>你好</li>
+                    <li>你好</li>
+                    <li>你好</li>
+                    <li>你好</li>
+                    <li>你好</li>
+                </ul>
+
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                请输入对应指令的参数2:&nbsp;&nbsp;&nbsp; <input class="h1" name="args2" height="50px" width="100px"
+                                                      title="请输入对应的参数" value="nil">
+            </td>
+        </tr>
+
+        <tr>
+
+            <th class="a1">
+                <button class="button" name="method" value="getblockcount" title="用于获取当前节点的区块总数">getblockcount</button>
+            </th>
+
+
+        </tr>
+
+        <tr>
+
+            <th class="a1">
+                <button class="button" name="method" value="getblockcount" title="用于获取当前节点的区块总数">getblockcount</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+            <th class="a1">
+                <button class="button" name="method" value="getblockcount" title="用于获取当前节点的区块总数">getblockcount</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+            <th class="a1">
+                <button class="button" name="method" value="getblockcount" title="用于获取当前节点的区块总数">getblockcount</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+            <th class="a1">
+                <button class="button" name="method" value="getblockcount" title="用于获取当前节点的区块总数">getblockcount</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+            <th class="a1">
+                <button class="button" value="getblockcount" title="用于获取当前节点的区块总数">getblockcount</button>
+            </th>
+
+
+        </tr>
+
+        <tr>
+
+
+            <th class="a1">
+                <button class="button" name="method" value="getblockcount" title="用于获取当前节点的区块总数">getblockcount</button>
+            </th>
+
+
+        </tr>
+
+    </table>
+
 
 </form>
 </body>
