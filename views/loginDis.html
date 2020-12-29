@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bitcion 核心互通系统</title>
+</head>
+<link rel="" href="css/home.css">
+<body>
+<div><h1>{{.u}}欢迎来到Bitcoin指令界面</h1></div>
+<div>
+<ul>
+    <li><a>Blockchain</a>
+    <ul>
+        <li><a>getbestblockhash</a></li>
+        <li><a>getblock "blockhash"</a></li>
+        <li><a>getblockchaininfo</a></li>
+        <li><a>getblockcount</a></li>
+        <li><a>getblockfilter "blockhash"</a></li>
+    </ul>
+    </li>
+
+    <li><a>Control</a>
+        <ul>
+            <li><a>getmemoryinfo</a></li>
+            <li><a>getrpcinfo</a></li>
+            <li><a>logging</a></li>
+            <li><a>uptime</a></li>
+        </ul>
+    </li>
+
+    <li><a>Generating</a>
+        <ul>
+            <li><a>generatetoaddress nblocks "address"</a></li>
+            <li><a>generatetodescriptor num_blocks "descriptor"</a></li>
+        </ul>
+    </li>
+
+    <li><a>Mining</a>
+        <ul>
+            <li><a>getblocktemplate</a></li>
+            <li><a>getmininginfo</a></li>
+            <li><a>getnetworkhashps</a></li>
+            <li><a>submitheader "hexdata"</a></li>
+        </ul>
+    </li>
+
+    <li><a>Network</a>
+        <ul>
+            <li><a>clearbanned</a></li>
+            <li><a>disconnectnode</a></li>
+            <li><a>getaddednodeinfo</a></li>
+            <li><a>getconnectioncount</a></li>
+            <li><a>getnettotals</a></li>
+        </ul>
+    </li>
+
+    <li><a>Rawtransactions</a>
+        <ul>
+            <li><a>analyzepsbt "psbt"</a></li>
+            <li><a>combinepsbt</a></li>
+            <li><a>combinerawtransaction</a></li>
+            <li><a>converttopsbt "hexstring"</a></li>
+        </ul>
+    </li>
+
+    <li><a>Util</a>
+        <ul>
+            <li><a>createmultisig nrequired</a></li>
+            <li><a>deriveaddresses "descriptor"</a></li>
+            <li><a>estimatesmartfee conf_target</a></li>
+            <li><a>getdescriptorinfo "descriptor"</a></li>
+            <li><a>validateaddress "address"</a></li>
+        </ul>
+    </li>
+
+    <li><a>Wallet</a>
+        <ul>
+            <li><a>abandontransaction "txid"</a></li>
+            <li><a>abortrescan</a></li>
+            <li><a>addmultisigaddress nrequired</a></li>
+            <li><a>backupwallet "destination"</a></li>
+        </ul>
+    </li>
+
+    <li><a>Zmq</a>
+        <ul>
+            <li><a>getzmqnotifications</a></li>
+        </ul>
+    </li>
+
+</ul>
+</div>
+
+<form method="get" action="/rpcResultByMethod">
+    <input name="args" height="50px" width="500px" title="请输入对应的参数" value="nil">
+<!--<ul style="list-style: none">
+
+    <li><button name="method" value="getblockcount" title="用于获取当前节点的区块总数" >getblockcount</button></li>
+    <li><button name="method" value="getbestblockhash" title="获取当前节点最新区块的hash值" >getbestblockhash</button></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>-->
+
+</form>
+</body>
+</html>
