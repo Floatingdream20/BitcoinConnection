@@ -35,3 +35,12 @@ func (u User) Inseruser()(int64,error){
 	}
 	return id,err
 }
+
+func(u User)Inse()(*User,error){
+	row:=dbMysqlSV.Db.QueryRow("select user_name  from bccw_user where user_name=? ",u.UserName)
+	err:= row.Scan(&u.UserName)
+	if err != nil {
+		return nil,err
+	}
+	return &u,nil
+}

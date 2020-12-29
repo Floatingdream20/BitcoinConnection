@@ -21,6 +21,11 @@ func (t *ToregController)Post(){
 		t.Ctx.WriteString("你还有未填写的数据")
 		return
 	}
+	_,err=user.Inse()
+	if err == nil {
+		t.Ctx.WriteString("用户已存在")
+		return
+	}
     _,err=user.Inseruser()
 	if err != nil {
 		t.Ctx.WriteString("用户数据未提交成功")
