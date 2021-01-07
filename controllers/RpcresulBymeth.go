@@ -19,16 +19,18 @@ func (r *ResultbymedController) Get() {
 		r.Ctx.WriteString("指令未接收")
 		return
 	}
-	json, err := Bitcoin_conne.PrepareJSON(Prejson.Method,Prejson )
+	jsons, err := Bitcoin_conne.PrepareJSON(Prejson.Method,Prejson )
 	if err != nil {
 		r.Ctx.WriteString("指令处理出错")
 		return
 	}
-	fmt.Println("走到这里了",json)
-	data:=bitcoinService.Order(Prejson.Method,json)
-	fmt.Println("32",data)
+  fmt.Println(jsons)
+	data:=bitcoinService.Order(Prejson.Method,jsons)
+
+
+	fmt.Println(*data)
 	r.Data["A"]=data
-	r.TplName = "result.html"
+    r.TplName="loginDis.html"
 	/*
 	for k, v =range map{
 		if prejson.Args1 == k{

@@ -19,6 +19,7 @@ func ( t *Todisplnter)Post(){
 		return
 	}
 
+
       u,err:= user.Quereuser()
 
 	if err != nil {

@@ -1,60 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--<!DOCTYPE html>
+<html>-->
 <head>
-    <meta charset="UTF-8">
-    <title>登陆页面</title>
-    <link rel="stylesheet" type="text/css" href="./css/login.css">
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            $(".name input").focus(function(){
-                $(this).prev("i").css({"background-image":"url(img/user2.png)"});
-            });
-            $(".name input").blur(function(){
-                $(this).prev("i").css({"background-image":"url(img/user1.png)"});
-            });
-            $(".password input").focus(function(){
-                $(this).prev("i").css({"background-image":"url(img/password2.png)"});
-            });
-            $(".password input").blur(function(){
-                $(this).prev("i").css({"background-image":"url(img/password1.png)"});
-            });
-        });
-    </script>
-</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Bitcoin</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="./css/style.css" />
+
 <body>
-    <div class="container">
-        <div class="wrap">
-            <header><em>bitcoin</em><span>核心互通登入界面</span></header>
-            <article>
-                <section>
-                    <aside>
-                        <em>
-                            <img src="./img/user.png">
-                        </em>
-                         <form action="/toDisplayInterface" method="post" >
-                            <p class="name"><i></i><input type="text" name="userName"  class="userName" placeholder="请输入用户名"></p>
-                            <p class="password"><i></i><input type="password" name="password" class="pwd" placeholder="请输入密码"></p>
-                            <button>登录</button>
-                            <p class="regist"><span>没有账号?</span><a href="/regist.html" methods="get">立即注册</a></p>
-                            <div class="clear"></div>
-                        </form>
-                    </aside>
-                   
-                </section>               
-            </article>
-            <footer>
-                <ul>
-                    <li><a href="#">可信</a></li>
-                    <li><a href="#">可靠</a></li>
-                    <li><a href="#">安全</a></li>
-                    <li><a href="#">保障</a></li>
-                    <li><a href="#">无敌</a></li>
-                    <li><a href="#">专业团队</a></li>
-                </ul>
-                <p>本网站版权归G组有限公司所有，未经许可，不得转载。</p>
-            </footer>
-        </div>
+
+<div class="login-container">
+    <h1>Bitcoin</h1>
+
+    <!--<div class="connect">
+        <p>www.mycodes.net</p>
+    </div>-->
+    <div class="connect">
+        <p>hello world</p>
     </div>
+
+    <form action="/toDisplayInterface" method="post" id="loginForm">
+        <div>
+            <input type="text" name="userName" class="username" placeholder="用户名" autocomplete="off"/>
+        </div>
+        <div>
+            <input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" onpaste="return false" />
+        </div>
+        <button id="submit" type="submit">登 录</button>
+    </form>
+
+    <a href="/regist.html" methods="get">
+        <button type="button" class="register-tis">还有没有账号？</button>
+    </a>
+
+</div>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+<!--背景图片自动更换-->
+<script src="./js/supersized.3.2.7.min.js"></script>
+<script src="./js/supersized-init.js"></script>
+<!--表单验证-->
+<script src="./js/jquery.validate.min.js?var1.14.0"></script>
+
 </body>
 </html>

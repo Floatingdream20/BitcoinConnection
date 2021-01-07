@@ -22,8 +22,10 @@ func (t *ToregController)Post(){
 		return
 	}
 	//
+
     _,err=user.Inseruser()
 	if err != nil {
+		fmt.Println(err)
 		t.Ctx.WriteString("用户数据未提交成功")
 	}
 

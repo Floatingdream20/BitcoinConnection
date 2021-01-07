@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -30,7 +31,9 @@ func PrepareJSON(method string, prejson models.Prejson) (string, error) {
 		request.Params = nil
 		break
 	case "getblockhash":
-		request.Params = []interface{}{prejson.Args1}
+		 height,_:=strconv.Atoi(prejson.Args1)
+
+		request.Params = []interface{}{height}
 		break
 	case "getnewaddress":
 		request.Params = nil
@@ -63,7 +66,7 @@ func PrepareJSON(method string, prejson models.Prejson) (string, error) {
 		request.Params = []interface{}{prejson.Args1,prejson.Args2}
 		break
 	case "getblockheader":
-		request.Params = []interface{}{prejson.Args1,prejson.Args2}
+		request.Params = []interface{}{prejson.Args1}
 		break
 	case "getwalletinfo":
 		request.Params = nil
@@ -103,8 +106,8 @@ func Dopost(url string, header map[string]string, body string) (*models.Rpcresul
 		return nil, err
 	}
 	code := reponse.StatusCode
+  fmt.Println(code)
 
-	fmt.Println(code)
 	defer reponse.Body.Close()
 
 	reponsebyte, err := ioutil.ReadAll(reponse.Body)

@@ -3,39 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <title>Bitcion 核心互通系统</title>
+    <style type="text/css">
+        ul {
+            list-style: none;
+            width: auto;
+        }
+
+
+        table {
+
+            width: auto;
+            margin: auto;
+            border-collapse: collapse;
+
+        }
+
+        th, td {
+            color: wheat;
+            width: 500px;
+
+            height: 40px;
+
+            border: 1px solid white;
+
+            font-size: 12px;
+
+            text-align: center;
+
+        }
+
+
+
+        .h1 {
+            margin: auto;
+        }
+
+        #h2 {
+
+            margin: auto;
+            float: left;
+
+        }
+
+        button:hover {
+            color: beige;
+            font-size: 20px;
+            background-color: orange;
+            cursor: pointer;
+
+            font-weight: bold;
+
+
+        }
+
+        .button {
+            border-color: lavenderblush;
+            color: #FFFFB6;
+            background-color: #3A4A64;
+            width: 250px;
+            height: 50px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        #h1 {
+            margin-left: 40%;
+            color: wheat;
+
+        }
+
+        body {
+            font-family: "微软雅黑";
+            background-image: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=212568819,545680569&fm=26&gp=0.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .a1 {
+            width: 250px;
+            height: 50px;
+
+        }
+    </style>
+    <script type="text/javascript">
+    </script>
 </head>
 <body>
-<h1>{{.u}}欢迎来到指令挑选界面</h1>
-<form method="get" action="/RpcresultbyMethod">
-    <input name="arg1" height="50px" width="100px" title="请输入对应的参数" value="nil">
-    <input name="arg2" height="50px" width="100px" title="请输入对应的参数" value="nil">
-    <ul style="list-style: none">
 
-        <li>
-            <button name="method" value="getblockcount" title="用于获取当前节点的区块总数">getblockcount</button>
-        </li>
-        <li>
-            <button name="method" value="getbestblockhash" title="获取最新区块的hash">getbestblockhash</button>
-        </li>
-        <li>
-            <button name="method" value="getblockhash" title="通过区块高度查看区块hash">getblockhash</button>
-        </li>
-        <li>
-            <button name="method" value="getblock" title="根据区块hash获取区块信息">getblock</button>
-        </li>
-        <li>
-            <button name="method" value="getnewaddress" title="生成一个新的比特币地址">getnewaddress</button>
-        </li>
-        <li>
-            <button name="method" value="getblockchaininfo" title="获取区块链的数据">getblockchaininfo</button>
-        </li>
-        <li>
-            <button name="method" value="getdifficulty" title="以最小难度的倍数返回工作证明难度">getdifficulty</button>
-        </li>
-        <li>
-            <button name="method" value="getbalances" title="返回服务器的总运行时间">getbalances</button>
-        </li>
-    </ul>
+<h1 id="h1">{{.u}}欢迎来到指令挑选界面 </h1>
+<form method="Get" action="/RpcresultbyMethod">
+
+
+    <table >
+        <tr>
+
+            <td colspan="1">
+                请输入对应指令的参数1:&nbsp;&nbsp;&nbsp; <input class="h1" name="args1" height="50px" width="100px"
+                                                      title="请输入对应的参数" value="nil">
+            </td>
+            <td rowspan="9" colspan="2">
+                <h2>结果是:</h2>
+                <ul>
+          <li style="font-size:30px ">
+              {{.A}}</li>
+                </ul>
+
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                请输入对应指令的参数2:&nbsp;&nbsp;&nbsp; <input class="h1" name="args2" height="50px" width="100px"
+                                                      title="请输入对应的参数" value="nil">
+            </td>
+        </tr>
+
+        <tr>
+
+            <th class="a1">
+                <button  class="button" name="method" value="getblockcount" title="用于获取当前节点的区块总数">getblockcount</button>
+            </th>
+
+
+        </tr>
+
+        <tr>
+
+            <th class="a1">
+                <button class="button" name="method" value="getbestblockhash" title="获取最新区块的hash">getbestblockhash</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+            <th class="a1">
+                <button class="button" name="method" value="getblockhash" title="通过区块高度查看区块hash">getblockhash</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+            <th class="a1">
+                <button class="button" name="method" value="getblock" title="根据区块hash获取区块信息">getblock</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+            <th class="a1">
+                <button class="button" name="method" value="getnewaddress" title="生成一个新的比特币地址">getnewaddress</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+            <th class="a1">
+                <button class="button"  name="method" value="getblockchaininfo" id="method1" onclick="result()" title="获取区块链的数据">getblockchaininfo</button>
+            </th>
+
+
+        </tr>
+
+        <tr>
+
+
+            <th class="a1">
+                <button class="button" name="method" value="getdifficulty" title="以最小难度的倍数返回工作证明难度">getdifficulty</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+
+            <th class="a1">
+                <button class="button" name="method" value="getbalances" title="返回服务器的总运行时间">getbalances</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+
+            <th class="a1">
+                <button  class="button" name="method" value="getmemoryinfo" title="调用返回内存利用信息">getmemoryinfo</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+
+            <th class="a1">
+                <button  class="button" name="method" value="gettxoutsetinfo" title="调用返回确认的UTXO集合的统计信息">gettxoutsetinfo</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+
+            <th class="a1">
+                <button  class="button" name="method" value="getmempoolinfo" title="调用返回节点旳内存交易池信息">getmempoolinfo</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+
+            <th class="a1">
+                <button class="button" name="method" value="getchaintxstats" title="返回关于链中交易总数和速率的统计信息(查看 PR 9733 ). ">getchaintxstats</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+
+            <th class="a1">
+                <button class="button" name="method" value="getblockheader" title="调用返回本地最优链中指定哈希区块的头，可以指定 不同的参数来返回序列化表示，或者JSON对象表示。">getblockheader</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+
+            <th class="a1">
+                <button class="button" name="method" value="getwalletinfo" title="调用返回钱包总体信息">getwalletinfo</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+
+            <th class="a1">
+                <button class="button" name="method" value="getnetworkinfo" title="查看网络状态">getnetworkinfo</button>
+            </th>
+
+
+        </tr>
+        <tr>
+
+
+            <th class="a1">
+                <button class="button" name="method" value="getmininginfo" title="调用返回挖矿相关的信息">getmininginfo</button>
+            </th>
+
+
+        </tr>
+
+    </table>
+
 
 </form>
 </body>

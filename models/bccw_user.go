@@ -9,7 +9,7 @@ type User struct {
 	Id           int  `form:"id"`
 	UserName     string `form:"userName"`
 	UserPassword string `form:"password"`
-	UserPhone    string `form:"userPhone"`
+	UserPhone    string `form:"phone_number"`
 }
 
 func (u User)Quereuser()(*User,error){

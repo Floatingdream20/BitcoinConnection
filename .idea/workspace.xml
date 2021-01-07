@@ -2,19 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af2e3805-dfc3-4a86-95a9-c684b53ec623" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Entity/blockheader.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/chaintxstats.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/mempoolinfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/networkinfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/txoutsetinfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/walletinfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Alltype.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-3.1.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/supersized-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/supersized.3.2.7.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bitcoin_conne/RPCutill.go" beforeDir="false" afterPath="$PROJECT_DIR$/Bitcoin_conne/RPCutill.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bitcoinService/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/bitcoinService/service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/RpcresulBymeth.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/RpcresulBymeth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/result.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/result.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/TODispInterControllers.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/TODispInterControllers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/Toregist.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Toregist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/PreJSON.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/PreJSON.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/bccw_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/bccw_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/login1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/regist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/_21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bg1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bj.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bj2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bj3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bj5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icon2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icon3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icon4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/password1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/password2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/rememberPassword1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/rememberPassword2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/user1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/user2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/user4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/reload.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.tpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/loginDis.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/loginDis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/regist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/result.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +89,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
     <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\goproject\src\Bitcoin_core_web\views" />
       <recent name="D:\goproject\src\Bitcoin_core_web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\goproject\src\Bitcoin_core_web\views" />
       <recent name="C:\Users\goproject\src\Bitcoin_core_web\static\js" />
       <recent name="C:\Users\goproject\src\Bitcoin_core_web\static\img" />
       <recent name="C:\Users\goproject\src\Bitcoin_core_web\static\css" />
+      <recent name="C:\Users\goproject\src\Bitcoin_core_web\views" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build main.go">
@@ -82,8 +124,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build BitcoinConnection-master" />
+      <item itemvalue="Go Build.go build main.go" />
     </list>
     <recent_temporary>
       <list>
@@ -96,6 +138,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="385" y="89" key="#GOROOT" timestamp="1609327275387">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="385" y="89" key="#GOROOT/0.0.1536.864@0.0.1536.864" timestamp="1609327275387" />
     <state x="530" y="38" key="#SQL_Dialects" timestamp="1608687210495">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -116,26 +162,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="695" y="103" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609068519573" />
-    <state width="1034" height="162" key="GridCell.Tab.0.bottom" timestamp="1609248695948">
+    <state width="1493" height="294" key="GridCell.Tab.0.bottom" timestamp="1610012938448">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1034" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609248695948" />
-    <state width="1193" height="264" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608453410473" />
-    <state width="1034" height="162" key="GridCell.Tab.0.center" timestamp="1609248695947">
+    <state width="1493" height="294" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610012938448" />
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1609943537910" />
+    <state width="1493" height="294" key="GridCell.Tab.0.center" timestamp="1610012938447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1034" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609248695947" />
-    <state width="1193" height="264" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1608453410473" />
-    <state width="1034" height="162" key="GridCell.Tab.0.left" timestamp="1609248695945">
+    <state width="1493" height="294" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610012938447" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1609943537910" />
+    <state width="1493" height="294" key="GridCell.Tab.0.left" timestamp="1610012938447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1034" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609248695945" />
-    <state width="1193" height="264" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1608453410473" />
-    <state width="1034" height="162" key="GridCell.Tab.0.right" timestamp="1609248695947">
+    <state width="1493" height="294" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610012938447" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1609943537908" />
+    <state width="1493" height="294" key="GridCell.Tab.0.right" timestamp="1610012938448">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1034" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609248695947" />
-    <state width="1193" height="264" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1608453410473" />
+    <state width="1493" height="294" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610012938448" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1609943537910" />
     <state x="349" y="24" key="SettingsEditor" timestamp="1608818835281">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
